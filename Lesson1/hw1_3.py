@@ -4,5 +4,3 @@
 user_var = str(input('Введите число: '))
 user_var = int(user_var) + int(str(user_var * 2)) + int(str(user_var * 3))
 print(user_var)
-
-
