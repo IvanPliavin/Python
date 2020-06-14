@@ -7,10 +7,13 @@ a = int(input('Сколько км пробежал в 1й день?: '))
 b = int(input('Сколько км нужно пробежать ?: '))
 day = 1
 while True:
+    if b <= a:
+        print(f'На {day}й день пробежит {b} км')
+        break
     a += a * 0.1
     day += 1
-    if a >= b:
-        print(f'На {day}й день пробежит {int(a)} км')
+    if a > b:
+        print(f'На {day}й день пробежит {a} км')
         break
 
 
