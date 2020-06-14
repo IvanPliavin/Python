@@ -5,7 +5,6 @@
 
 
 my_list = []
-
 while True:
     user_var = input('Введите значение и нажмите Энтр, для завершения ввода отправьте пустое поле : ')
     if user_var == '':
@@ -25,6 +24,5 @@ else:
         my_list[a], my_list[b] = my_list[b], my_list[a]
         a += 2
         b += 2
-
 print(my_list)
 
