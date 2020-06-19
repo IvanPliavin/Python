@@ -4,9 +4,7 @@
 # Реализовать вывод данных о пользователе одной строкой.
 
 def contacts(**kwargs):
-    for key, value in kwargs.items():
-        print(key, value, end='; ')
-
+    print(kwargs)
 
 contacts(Имя='Иван', Фамилия='Плявин', Год_рождения=1991,
         Город_проживания='Москва', email='plyavini@mail.ru', телефон=89154943337)
