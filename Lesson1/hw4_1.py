@@ -5,8 +5,11 @@
 import sys
 
 def salary(arguments):
-    return int(arguments[1]) * int(arguments[2]) + int(arguments[3])
+    try:
+        return int(arguments[1]) * int(arguments[2]) + int(arguments[3])
+    except IndexError:
+        print('Введите ставку в час, кол-во часов и бонус через пробел')
 
-print(salary(sys.argv))
+print('Зп сотруднкика: ',salary(sys.argv))
 
 
